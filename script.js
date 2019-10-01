@@ -25,11 +25,11 @@ function addBookToLibrary() {
 }
 
 function newBookButtonHandler() {
-  let attributesNodeList = $(".add-new").attributes;
+  let atributesNodeList = $(".add-new").attributes;
   let atributesArray = [];
-  for (let i = 0; i < attributesNodeList.length; i++) {
-    const element = attributesNodeList[i];
-    attributesArray.push(element.nodeName);
+  for (let i = 0; i < atributesNodeList.length; i++) {
+    const element = atributesNodeList[i];
+    atributesArray.push(element.nodeName);
   }
   if (atributesArray.includes("hidden")) {
     $(".add-new").removeAttribute("hidden");
